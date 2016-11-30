@@ -29,6 +29,7 @@ h1 {
   margin: 0 auto;
   padding: 8px;
   text-align: center;
+  display: block;
 }
 
 header {
@@ -56,6 +57,10 @@ a {
     width: 50%;
   }
 
+  nav {
+    overflow: hidden;
+  }
+
 }
 @media only screen and (min-width: 38em) {
 
@@ -73,6 +78,22 @@ a {
     line-height: 1.5;
   }
 
+  li {
+    float: right;
+    width: 25%;
+  }
+
+  ul {
+    overflow: hidden;
+  }
+
+  h1 {
+    float: left;
+    padding: 0;
+    text-align: left;
+    width: 25%;
+  }
+
 }
 
 @media only screen and (min-width: 90em) {
@@ -81,5 +102,11 @@ a {
     font-size: 130%;
     line-height: 1.5;
   }
+
+  h1 {
+    box-sizing: border-box;
+  }
+
+
 
 }
